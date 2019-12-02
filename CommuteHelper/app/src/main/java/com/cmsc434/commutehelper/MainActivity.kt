@@ -9,4 +9,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
+    
+    fun jumpToNext() {
+        val intent = Intent(applicationContext, SecondActivity::class.java)
+        startActivity(intent)
+    }
 }
