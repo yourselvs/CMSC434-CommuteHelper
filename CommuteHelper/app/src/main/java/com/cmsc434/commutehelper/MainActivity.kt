@@ -1,5 +1,6 @@
 package com.cmsc434.commutehelper
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -9,9 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
     }
-    
-    fun jumpToNext() {
-        val intent = Intent(applicationContext, SecondActivity::class.java)
+
+    fun jumpToHistory() {
+        val intent = Intent(applicationContext, HistoryMain::class.java)
         startActivity(intent)
     }
 }
