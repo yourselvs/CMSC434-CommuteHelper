@@ -88,7 +88,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.466"
-        app:srcCompat="@drawable/yearView" />
+        app:srcCompat="@drawable/year" />
 
     <Button
         android:id="@+id/button12"
