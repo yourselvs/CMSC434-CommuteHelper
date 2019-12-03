@@ -59,7 +59,6 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="10dp"
         android:background="@drawable/buttonshape"
-        android:onClick="jumpToHistory"
         android:scaleType="centerInside"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/historyLabel"
