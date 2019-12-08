@@ -6,6 +6,90 @@
     android:layout_height="match_parent"
     tools:context=".HistoryGridViewYear">
 
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/statistics"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/statistics"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/history"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3"
+        app:srcCompat="@drawable/statistics"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/history"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/startATrip"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3"
+        app:srcCompat="@drawable/history"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/startATrip"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/nearby"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3"
+        app:srcCompat="@drawable/schedule"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/nearby"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/map2"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3"
+        app:srcCompat="@drawable/nearby"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/map2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView3"
+        app:srcCompat="@drawable/map"
+        tools:ignore="VectorDrawableCompat" />
+
     <Button
         android:id="@+id/button11"
         android:layout_width="wrap_content"
@@ -27,14 +111,26 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="16dp"
         android:layout_marginEnd="102dp"
         android:layout_marginRight="102dp"
         android:background="#FFB300"
         android:text="Grid"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button8"
-        app:layout_constraintTop_toBottomOf="@+id/TextView3" />
+        app:layout_constraintTop_toBottomOf="@+id/statistics" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="93dp"
+        android:layout_marginLeft="93dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="List"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startATrip" />
 
     <TextView
         android:id="@+id/TextView3"
@@ -49,20 +145,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="93dp"
-        android:layout_marginLeft="93dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
-        android:text="List"
-        app:layout_constraintEnd_toStartOf="@+id/button9"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextView3" />
 
     <Button
         android:id="@+id/button10"
@@ -87,7 +169,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.466"
+        app:layout_constraintVertical_bias="0.548"
         app:srcCompat="@drawable/year" />
 
     <Button
