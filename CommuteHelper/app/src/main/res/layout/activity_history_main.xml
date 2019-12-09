@@ -6,6 +6,90 @@
     android:layout_height="match_parent"
     tools:context=".HistoryMain">
 
+    <ImageButton
+        android:id="@+id/settings"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/statistics"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/statistics"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/history"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:srcCompat="@drawable/statistics"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/history"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/startATrip"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:srcCompat="@drawable/history"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/startATrip"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/nearby"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:srcCompat="@drawable/schedule"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/nearby"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/map2"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:srcCompat="@drawable/nearby"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/map2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_bar"
+        app:srcCompat="@drawable/map"
+        tools:ignore="VectorDrawableCompat" />
+
     <TextView
         android:id="@+id/title_bar"
         android:layout_width="420dp"
@@ -26,12 +110,14 @@
         android:id="@+id/record_today"
         android:layout_width="420dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
         android:gravity="center|center_horizontal|center_vertical"
         android:includeFontPadding="true"
         android:text="Today"
         android:textSize="30sp"
         app:fontFamily="sans-serif-condensed-medium"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_bar" />
 
@@ -92,5 +178,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
