@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/Settings"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Statistics"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Statistics"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Settings"
+        app:layout_constraintStart_toEndOf="@+id/History"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/statistics"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/History"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Statistics"
+        app:layout_constraintStart_toEndOf="@+id/StartATrip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/history"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/StartATrip"
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/History"
+        app:layout_constraintStart_toEndOf="@+id/Nearby"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schedule"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Nearby"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/StartATrip"
+        app:layout_constraintStart_toEndOf="@+id/Map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nearby"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Map"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Nearby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="168dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Make a Trip"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/destination"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="e.g. Stamp Student Union"
+        android:inputType="textPersonName"
+        android:textColorHint="#323232"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="251dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:text="Enter Your Destination"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:text="@android:string/search_go"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

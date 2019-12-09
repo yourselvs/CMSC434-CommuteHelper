@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/Map"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Nearby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Settings"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Statistics"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Statistics"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Settings"
+        app:layout_constraintStart_toEndOf="@+id/History"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/statistics"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/StartATrip"
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/History"
+        app:layout_constraintStart_toEndOf="@+id/Nearby"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schedule"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Nearby"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/StartATrip"
+        app:layout_constraintStart_toEndOf="@+id/Map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nearby"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/History"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Statistics"
+        app:layout_constraintStart_toEndOf="@+id/StartATrip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/history"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/destination"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Take String Extra from Destination page"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StartATrip"
+        app:srcCompat="@drawable/map_in_progress" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
