@@ -18,6 +18,8 @@
         <activity android:name=".MakeTripStart" />
         <activity android:name=".MakeTripInProgress" />
         <activity android:name=".MakeTripComplete" />
+        <activity android:name=".MapShorterPath"/>
+        <activity android:name=".MapMain"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
