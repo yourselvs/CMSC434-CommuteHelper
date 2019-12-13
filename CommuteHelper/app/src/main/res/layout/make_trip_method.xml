@@ -21,6 +21,7 @@
         android:id="@+id/walk"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="168dp"
         android:background="@drawable/buttonshape"
         android:scaleType="centerInside"
@@ -29,6 +30,7 @@
         app:layout_constraintEnd_toStartOf="@+id/bike"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/walk"
         tools:ignore="VectorDrawableCompat" />
 
@@ -36,6 +38,7 @@
         android:id="@+id/bike"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="32dp"
         android:layout_marginBottom="168dp"
         android:background="@drawable/buttonshape"
         android:scaleType="centerInside"
@@ -43,6 +46,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/walk"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:srcCompat="@drawable/bike"
         tools:ignore="VectorDrawableCompat" />
 
@@ -132,10 +136,12 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="168dp"
+        android:layout_width="0dp"
         android:layout_height="50dp"
+        android:background="#00BCD4"
         android:gravity="center"
         android:text="Make a Trip"
+        android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
