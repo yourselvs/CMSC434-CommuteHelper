@@ -13,6 +13,13 @@
         <activity android:name=".HistoryGridView" />
         <activity android:name=".history_listview" />
         <activity android:name=".HistoryMain" />
+        <activity android:name=".MakeTripMethod" />
+        <activity android:name=".MakeTripDestination" />
+        <activity android:name=".MakeTripStart" />
+        <activity android:name=".MakeTripInProgress" />
+        <activity android:name=".MakeTripComplete" />
+        <activity android:name=".MapShorterPath"/>
+        <activity android:name=".MapMain"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

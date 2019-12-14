@@ -13,9 +13,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val historyBtn: ImageButton = findViewById(R.id.History)
+        val startTripBtn: ImageButton = findViewById(R.id.StartATrip)
+        val mapBtn: ImageButton = findViewById((R.id.Map))
 
         historyBtn.setOnClickListener {
             val intent = Intent(applicationContext, HistoryMain::class.java)
+            startActivity(intent)
+        }
+        startTripBtn.setOnClickListener {
+            val intent = Intent(applicationContext, MakeTripMethod::class.java)
+            startActivity(intent)
+        }
+        mapBtn.setOnClickListener {
+            val intent = Intent(applicationContext, MapMain::class.java)
             startActivity(intent)
         }
     }

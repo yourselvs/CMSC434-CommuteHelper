@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bike"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/bike"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="@+id/bike"
+        app:layout_constraintTop_toBottomOf="@+id/bike" />
+
+    <ImageButton
+        android:id="@+id/walk"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bike"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/walk"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/bike"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="168dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/walk"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/bike"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Settings"
+        android:layout_width="64dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Statistics"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Map"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Nearby"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Nearby"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/StartATrip"
+        app:layout_constraintStart_toEndOf="@+id/Map"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nearby"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/StartATrip"
+        android:layout_width="71dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/History"
+        app:layout_constraintStart_toEndOf="@+id/Nearby"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/schedule"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/History"
+        android:layout_width="67dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Statistics"
+        app:layout_constraintStart_toEndOf="@+id/StartATrip"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/history"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Statistics"
+        android:layout_width="72dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:scaleType="centerInside"
+        android:text=""
+        app:layout_constraintEnd_toStartOf="@+id/Settings"
+        app:layout_constraintStart_toEndOf="@+id/History"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/statistics"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#00BCD4"
+        android:gravity="center"
+        android:text="Make a Trip"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="251dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="140dp"
+        android:gravity="center"
+        android:text="Choose Your Method!"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Walk"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/walk"
+        app:layout_constraintStart_toStartOf="@+id/walk"
+        app:layout_constraintTop_toBottomOf="@+id/walk" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
